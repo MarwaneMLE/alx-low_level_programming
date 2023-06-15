@@ -1,10 +1,7 @@
 #include<stdio.h>
 /*
- * Main :Program starts with the entry point. In C it’s the main function
- *	 From the main function you can call other functions
- *	 When main returns, the program stops 
-
- * Return: Ends the function and returns to the calling function
+ * Main-A program print a line with puts function
+ * Return:(0)-Success
 */ 
 int main(void)
 {
