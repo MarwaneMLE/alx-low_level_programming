@@ -1,7 +1,7 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
- * main - main function prints all possible different combinations of two digits
- * Return: 0 if success
+ * main - prints all possible different combinations of two digits.
+ * Return: 0 is success.
  */
 int main(void)
 {
@@ -21,7 +21,7 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
-		putchar('\n');
-		return (0);
 	}
+	putchar('\n');
+	return (0);
 }
