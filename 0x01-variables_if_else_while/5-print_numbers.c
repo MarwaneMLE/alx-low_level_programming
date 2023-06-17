@@ -1,15 +1,10 @@
 #include <stdio.h>
 /**
- * main:  prints all single digit numbers from 0 to 10.
- * Return: 0 if success
+ * main - Prints the numbers from 0 to 9.
+ * Return: 0 if success.
  */
 int main(void)
 {
-	int i;
-
-	for(i = 0; i <= 10; i++)
-	{
-		printf("%d\n", i);
-	}
+	printf("0123456789\n");
 	return (0);
 }
