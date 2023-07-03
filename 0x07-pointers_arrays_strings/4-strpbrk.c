@@ -1,29 +1,23 @@
 #include "main.h"
-
 /**
-* _strpbrk - find character in text
-* @s: string
-* @accept: character to search
-* Return: char
-*/
-
+ * _strpbrk - Entry point
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (Success)
+ */
 char *_strpbrk(char *s, char *accept)
 {
-	int a, b;
+		int k;
 
-	for (a = 0 ; *(s + a) ; a++)
-	{
-		for (b = 0 ; *(accept + b) ; b++)
+		while (*s)
 		{
-			if (*(accept + b) == s[a])
+			for (k = 0; accept[k]; k++)
 			{
-				return (s + a);
+			if (*s == accept[k])
+			return (s);
 			}
-		}                        
-                if (*(accept + b) == s[a])	
-		{
-			return (s + a);
+		s++;
 		}
-	}
-	return (0);
+
+	return ('\0');
 }
