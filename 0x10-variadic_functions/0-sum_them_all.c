@@ -8,15 +8,20 @@
  */
 
 {
-	va_list ap;
+	va_list valist;
 	unsigned int i, sum = 0;
 
-	va_start(ap, n);
+	if (n == 0)
+		return (0);
+
+	va_start(valist, n);
 
 	for (i = 0; i < n; i++)
-		sum += va_arg(ap, int);
+	{
+		sum += va_arg(valist, const unsigned int);
+	}
 
-	va_end(ap);
+	va_end(valist);
 
 	return (sum);
 }
