@@ -1,0 +1,11 @@
+# Makefile for building the 'school' executable
+
+# Compiler variable (CC) with the value 'gcc'
+CC = gcc
+
+# Source files variable (SRC) with the value 'main.c school.c'
+SRC = main.c school.c
+
+# 'all' is a target that depends on the source files
+all: $(SRC)
+	#  $(CC) $(SRC) -o school
